@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./work-experience.component.css']
 })
 
+
 export class WorkExperienceComponent implements OnInit {
 
   workExperience : Array <any> = []; 
@@ -41,6 +42,4 @@ export class WorkExperienceComponent implements OnInit {
   
   
   
-  }
 
-}
