@@ -41,8 +41,7 @@ export class WorkExperienceComponent implements OnInit {
     this.workExperience.push(work2);
   
   
-  
-    
+
 
     }
   }
