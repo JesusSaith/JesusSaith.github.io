@@ -1,28 +1,19 @@
-<h3> Archivements & Certificates</h3>
+<h3>Archivements & Certificates</h3>
 <ul *ngFor="let cer of certificates">
-   <li>
-    <tr>
-
-        <td>
-            {{cer.curso}}
-        </td>
-
-    </tr>
-
-    <tr>
-
-        <td>
-            {{cer.escuela}}
-        </td>
-
-    </tr>
-    <tr>
-
-        <td>
-            {{cer.fecha}}
-        </td>
-
-    </tr>
-
-   </li> 
+  <li>
+    <table>
+      <tr>
+        <td>{{ cer.curso }}</td>
+      </tr>
+      <tr *ngIf="cer.enlace">
+        <td><a href="{{ cer.enlace }}" target="_blank">{{ cer.descripcion }}</a></td>
+      </tr>
+      <tr>
+        <td>{{ cer.escuela }}</td>
+      </tr>
+      <tr>
+        <td>{{ cer.fecha }}</td>
+      </tr>
+    </table>
+  </li>
 </ul>
